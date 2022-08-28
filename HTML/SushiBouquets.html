@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="../Images/logo-smachno-studio.png" type="image/png">
-    <link href="../CSS/aboutpage.css" rel="stylesheet" type="text/css">
-    <meta name="viewport" content="width=], initial-scale=1.0">
+    <link href="../CSS/FruityBouquets.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smachno Studio</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
             </div>
             <div class="second__block">
                 <a href="../index.html#main__conteiner-scroll" class="mb__main-link-menu">Меню</a>
-                <a href="" class="mb__main-link">Про нас</a>
+                <a href="../HTML/AboutPage.html" class="mb__main-link">Про нас</a>
                 <a href="../index.html#bouquet-scroll" class="mb__bouquete">Букети</a>
             </div>
             <div class="mb__block-last">
@@ -36,13 +36,16 @@
     <div class="wrapper" >
         <header class="header">
             <div class="header__conteiner">
+                <div class="img__block-logo">
+                    <img class="menu__img-logo" src="/Images/logoForBurger.svg" alt="">
+                </div>
                 <div class="img__block">
                     <img class="menu__img" id="burgerMenu" src="../Images/menu.svg" alt="">
                 </div>
                 <nav class="header__menu menu">
                     <ul class="menu__list">
                         <li class="menu__item"><a href="../index.html#main__conteiner-scroll" class="menu__link">МЕНЮ</a></li>
-                        <li class="menu__item"><a href="" class="menu__link_about">ПРО НАС</a></li>
+                        <li class="menu__item"><a href="../HTML/AboutPage.html" class="menu__link_about">ПРО НАС</a></li>
                         <li class="menu__item"><a href="../index.html#bouquet-scroll" class="menu__link_bouquet">БУКЕТИ</a></li>
                     </ul>
                 </nav>
@@ -58,24 +61,46 @@
             </div>
         </header>
     </div>
-    <div class="main__block">
-        <div class="main__block__conteiner">
-            <div class="main__block-logo">
-                <img src="/Images/logo-smachno-studio.png" alt="">
-            </div>
-            
-                <div class="main__block-text">
-                    <h1>Про нас</h1>
-                    <label>Всім привіт! Я Ілона, вітаю на сайті нашої студії-кав‘ярні. Більше 3-х років виготовляю їстівні букети. Вкладаю у справу свою душу, тому кожна композиція індивідуальна і виготовлена з любов‘ю. У нас можна знайти букети на будь-який смак і бюджет. Вже рік, окрім виготовлення букетів, у нас можна посмакувати кавою і тістечками. Знайти нас можна за адресою Ринкова 7, ТЦ Форум. Зажди чекаємо в гості, адже ми працюємо заради ваших позитивних відгуків.</label>
+    <div class="text__block">
+        <div class="text__block__conteiner">
+            <div class="txt__block">
+                <div class="left__text">
+                    <a href="../index.html#bouquet-scroll">Букети</a>
+                    <img src="/Images/arrow.svg" alt="">
+                    <label>Суші-букети</label>
                 </div>
-            
-            <div class="main__block-qr">
-                <img src="/Images/QR.svg" alt="">
+                <div class="right__text">
+                    <label>Для замовлення пишіть нам в соціальні мережі.</label>
+                </div>
             </div>
         </div>
-        
     </div>
-    
-    <script src="../JS/aboutpage.js"></script>
+    <div class="bouquet__block">
+        <div class="bouquet__conteiner">
+            <div class="up__block-bouquet">
+                <div class="block__first-bouqet">
+                    <img src="/Images/Bouquet's/Sushi bouquet's/bouquet1.PNG" alt="Don't found image">
+                </div>      
+                <div class="block__two-bouqet">
+                    <img src="/Images/Bouquet's/Sushi bouquet's/bouquet2.PNG" alt="Don't found image">
+                </div> 
+                <div class="block__three-bouqet">
+                    <img src="/Images/Bouquet's/Sushi bouquet's/bouquet3.PNG" alt="Don't found image">
+                </div>
+            </div>
+            <div class="down__block-bouquet">
+                <div class="block__first-bouqet-two">
+                    <img src="/Images/Bouquet's/Sushi bouquet's/bouquet4.JPG" alt="Don't found image">
+                </div>      
+                <div class="block__two-bouqet-two">
+                    <img src="/Images/Bouquet's/Sushi bouquet's/bouquet5.JPG" alt="Don't found image">
+                </div> 
+                <div class="block__three-bouqet-two">
+                    <img src="/Images/Bouquet's/Sushi bouquet's/bouquet6.JPG" alt="Don't found image">
+                </div>    
+            </div>
+        </div>
+    </div>
+    <script src="../JS/fruityBouquets.js"></script>
 </body>
 </html>
