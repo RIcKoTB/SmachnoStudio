@@ -16,12 +16,11 @@ body{
 /* Головне меню */
 
 .wrapper{
-  overflow: hidden;
+  overflow : hidden;
   position: fixed;
   flex-direction: column;
   width: 100%;
-  z-index: 50;
-  
+  z-index: 99999;
 }
 
 .header{
@@ -737,6 +736,266 @@ transition: background-color 0.3s ease 0s;
 }
 
 /* Меню бургер кінець */
+
+/* Logo */
+
+@media (min-width: 1025px){
+    .main__block{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .main__block-logo{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 97px;
+        justify-content: center;
+    }
+    
+    .main__block-logo img{
+        margin-top: 50px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 1024px){
+    .main__block{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .main__block-logo{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 97px;
+        justify-content: center;
+    }
+    
+    .main__block-logo img{
+        margin-top: 50px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 700px){
+    .main__block-logo{
+        margin-top: 70px;
+    }
+    
+    .main__block-logo img{
+        margin-top: 0px;
+        height: 165px;
+    }
+}
+
+@media (max-width: 425px){
+    .main__block-logo{
+        margin-top: 70px;
+    }
+    
+    .main__block-logo img{
+        margin-top: 0px;
+        height: 165px;
+    }
+}
+
+@media (max-width: 375px){
+    
+    .main__block-logo img{
+        margin-top: 0px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 320px){
+    
+    .main__block-logo img{
+        margin-top: 0px;
+        height: 130px;
+    }
+}
+
+
+/* Logo End*/
+
+/* Text */
+
+@media (min-width: 1025px){
+
+    .main__block-text{
+    
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+    }
+
+    .main__block-text h1{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        letter-spacing: 0.01em;
+
+        color: #000000;
+    }
+
+    .main__block-text label{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 550;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.01em;
+
+        color: #000000;
+    }
+}
+
+@media (max-width: 1024px){
+    .main__block-text{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+    }
+
+    .main__block-text h1{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        letter-spacing: 0.01em;
+
+        color: #000000;
+    }
+
+    .main__block-text label{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 550;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.01em;
+
+        color: #000000;
+    }
+}
+
+@media (max-width: 700px){
+
+    .main__block-text h1{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .main__block-text label{
+        font-weight: 550;
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 425px){
+    .main__block-text label{
+        font-weight: 550;
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+
+@media (max-width: 375px){
+    .main__block-text label{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+@media (max-width: 320px){
+    .main__block-text label{
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 0px;
+    }
+}
+
+/* Text End */
+
+/* QR */
+
+@media (min-width: 1025px){
+    .main__block-qr{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .main__block-qr img{
+        height: 300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 1024px){
+    .main__block-qr{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .main__block-qr img{
+        height: 300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 700px){
+    .main__block-qr{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .main__block-qr img{
+        height: 200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+}
+
 
 /* Огранічующий контейнер */
 
