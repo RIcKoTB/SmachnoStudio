@@ -664,13 +664,16 @@ transition: background-color 0.3s ease 0s;
 
 /* Меню бургер кінець */
 
-.text__block{
-    padding-top: 130px;
-    height: 100%;
-    width: 100%;
-}
+
 
 @media (min-width: 1025px) {
+
+    .text__block{
+        padding-top: 130px;
+        height: 100%;
+        width: 100%;
+    }
+
     .left__text{
         width: 50%;
         display: flex;
@@ -731,6 +734,13 @@ transition: background-color 0.3s ease 0s;
 }
 
 @media (max-width: 1024px) {
+
+    .text__block{
+        padding-top: 130px;
+        height: 100%;
+        width: 100%;
+    }
+
     .left__text{
         width: 50%;
         display: flex;
@@ -792,7 +802,7 @@ transition: background-color 0.3s ease 0s;
 
 @media (max-width: 425px) {
     .text__block{
-        padding-top: 50px;
+        padding-top: 150px;
     }
     .right__text{
         display: none;
@@ -859,14 +869,14 @@ transition: background-color 0.3s ease 0s;
         height: 100%;
     }
     
-    .up__block-bouquet{
+    .up__block-bouquet, .down__block-bouquet, .three__block-bouquet{
         display: flex;
         height: 50%;
         gap: 20px;
         margin-bottom: 20px;
     }
     
-    .down__block-bouquet{
+    .four__block-bouquet{
         display: flex;
         height: 50%;
         gap: 20px;
@@ -906,22 +916,19 @@ transition: background-color 0.3s ease 0s;
         height: 500px;
     }
 
-    .up__block-bouquet{
+    .up__block-bouquet, .down__block-bouquet, .three__block-bouquet{
         display: flex;
         height: 50%;
+        gap: 20px;
         margin-bottom: 20px;
-
-        
     }
     
-    .down__block-bouquet{
+    .four__block-bouquet{
         display: flex;
         height: 50%;
-        margin-left: -10px;
+        gap: 20px;
         margin-bottom: 100px;
     }
-
-
 }
 
 @media (max-width: 800px) {
