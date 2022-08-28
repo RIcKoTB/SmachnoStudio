@@ -1196,6 +1196,10 @@ transition: background-color 0.3s ease 0s;
 @media (min-width: 1025px) {
 
     .bouquet__block a{
+        text-decoration: none !important;
+    }
+    
+    .bouquet__block label{
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
@@ -1208,16 +1212,13 @@ transition: background-color 0.3s ease 0s;
     
         color: #000000;
     }
-    
+
     .bouquet__text__conteiner{
         min-height: 328px;
         align-items: center;
         text-align: center;
         display: flex;
     }
-
-
-
 
     .bouquet__conteiner{
         height: 100%;
@@ -1288,6 +1289,10 @@ transition: background-color 0.3s ease 0s;
 @media (max-width: 1024px) {
 
     .bouquet__block a{
+        text-decoration: none !important;
+    }
+    
+    .bouquet__block label{
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
@@ -1376,6 +1381,24 @@ transition: background-color 0.3s ease 0s;
         overflow-x: auto;
     }
 
+    .bouquet__block a{
+        text-decoration: none !important;
+    }
+    
+    .bouquet__block label{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 78px;
+        margin: 0 auto;
+    
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+    
+        color: #000000;
+    }
+
     .bouquet__conteiner::-webkit-scrollbar{
         width: 0;
     }
@@ -1429,21 +1452,6 @@ transition: background-color 0.3s ease 0s;
 }
 
 @media (max-width: 768px) {
-
-    .bouquet__block a{
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 50px;
-        line-height: 78px;
-        margin: 0 auto;
-    
-        letter-spacing: 0.01em;
-        text-transform: uppercase;
-    
-        color: #000000;
-    }
-    
     .bouquet__text__conteiner{
         min-height: 150px;
         align-items: center;

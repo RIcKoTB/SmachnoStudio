@@ -32,6 +32,10 @@ body{
 
 @media (min-width: 1025px) {
 
+    .img__block-logo{
+        display: none;
+    }
+
     .menu__list{
         display: flex;
         padding-left: 0px;
@@ -62,6 +66,10 @@ body{
 }
 
 @media (max-width: 1249px) {
+
+    .img__block-logo{
+        display: none;
+    }
 
     .menu__list{
         display: flex;
@@ -102,10 +110,16 @@ body{
         
     }
 
+    .img__block-logo{
+        display: flex;
+    }
+
     .img__block{
         width: 100%;
         align-items: flex-end;
+        justify-content: flex-end;
         text-align: end;
+        display: flex;
         margin: 0 auto;
     }
 
@@ -115,6 +129,15 @@ body{
         transition: all 0.75s linear;
         z-index: 9999;
         cursor: pointer;    
+    }
+
+    .menu__img-logo{
+        width: 100%;
+        height: 65px;
+        float: left;
+        transition: all 0.75s linear;
+        z-index: 9999;
+        cursor: pointer; 
     }
 
     .menu__img.active{
@@ -173,49 +196,19 @@ body{
     }
 }
 
+@media (max-width: 425px){
+    .menu__img-logo{
+        height: 35px;
+    }
+
+    .right__text{
+        display: none;
+    }
+}
+
 @media (max-width: 320px) {
-    .menu__list{
-        display: none;
-    }
-
-    .second_items{
-        display: none;
-    }
-
-    .header__button{
-        display: none;
-    }
-
-    .header__conteiner{
-        width: 100%;
-        min-height: 30px;
-        display: flex;
-        margin: 0 auto;
-        
-    }
-
-    .img__block{
-        width: 98%;
-        align-items: flex-end;
-        text-align: end;
-        margin: 0 auto;
-    }
-
-    .menu__img{
-        width: 15px;
-        height: 15px;
-        transition: all 0.50s linear;
-        z-index: 9999;
-        cursor: pointer;
-    }
-
-    .menu__img.active{
-        width: 15px;
-        height: 15px;
-        transition: all 0.50s linear;
-        transform: rotate(45deg);
-        z-index: 9999;
-        cursor: pointer;
+    .menu__img-logo{
+        height: 35px;
     }
 }
 .menu__item:not(:first-child){
@@ -648,14 +641,13 @@ transition: background-color 0.3s ease 0s;
     }
 
 }
-
 @media (max-width: 320px){
     .menu__burger__main{
 
         min-height: 100%;
         width: 80%;
         position: fixed;
-        margin-top: 30px;
+        margin-top: 40px;
         display: none;
         opacity: 0;
         visibility: hidden;
@@ -663,339 +655,329 @@ transition: background-color 0.3s ease 0s;
         transition: all 0.75s linear;
     
         background-color: #252121;
-    }
-
-    .up__block-logo{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: flex-start;
-        height: 100%;
-        margin: 0 auto;
-    }
-
-    .up__block-logo img{
-        width: 90%;
-        height: 90%;
-        margin-left: 15px;
-        
-    }
-
-    .second__block{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        gap: 20px;
-        margin-top: 70px;
-        z-index: 9999;
-    }
-
-    .mb__main-link, .mb__main-link-menu{ 
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 26px;
-        line-height: 24px;
-        letter-spacing: 0.01em;
-        margin-left: 30px;
-        text-transform: uppercase;
-        text-decoration: none !important;
-        z-index: 9999;
-
-        color: #FFFFFF;
-    }
-
-    .mb__bouquete{
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 26px;
-        line-height: 24px;
-        letter-spacing: 0.01em;
-        margin-left: 30px;
-        text-transform: uppercase;
-        text-decoration: none !important;
-        z-index: 9999;
-
-        color: #AB4C45;
     }
 
     .menu__burger__main.active{
-        min-height: 100%;
-        width: 80%;
-        position: fixed;
-        margin-top: 30px;
-        display: none;
-        opacity: 0;
-        visibility: hidden;
-
-        transition: all 0.75s linear;
-    
-        background-color: #252121;
+        margin-top: 40px;
     }
 }
 
 /* Меню бургер кінець */
 
-/* Logo */
+.text__block{
+    padding-top: 130px;
+    height: 100%;
+    width: 100%;
+}
 
-@media (min-width: 1025px){
-    .main__block{
+@media (min-width: 1025px) {
+    .left__text{
+        width: 50%;
         display: flex;
-        flex-direction: column;
-        height: 100%;
-        width: 100%;
-        margin: 0 auto;
+        align-items: center;
+        justify-content: flex-start;
+        align-content: center;
+        gap: 8px;
+    }
+    .right__text{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        align-content: center;
+        float: right;
     }
     
-    .main__block-logo{
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
+    .txt__block{
         display: flex;
-        margin-top: 97px;
-        justify-content: center;
     }
     
-    .main__block-logo img{
-        margin-top: 50px;
-        height: 200px;
+    .left__text a{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        text-decoration: none !important;
+        border: none !important;
+    
+        color: #656565;
+    }
+    
+    .left__text label{
+        
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+    
+        letter-spacing: 0.01em;
+    
+        color: #000000;
+    }
+    
+    .right__text label{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+    
+        color: #000000;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    .left__text{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        align-content: center;
+        gap: 8px;
+    }
+    .right__text{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        align-content: center;
+        float: right;
+    }
+    
+    .txt__block{
+        display: flex;
+    }
+    
+    .left__text a{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        text-decoration: none !important;
+        border: none !important;
+    
+        color: #656565;
+    }
+    
+    .left__text label{
+        
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+    
+        letter-spacing: 0.01em;
+    
+        color: #000000;
+    }
+    
+    .right__text label{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+    
+        color: #000000;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .text__block{
+        padding-top: 50px;
+    }
+    .right__text{
+        display: none;
+    }
+
+    .left__text a{
+        font-size: 12px;
+    }
+
+    .left__text label{
+        font-size: 18px;
     }
 }
 
-@media (max-width: 1024px){
-    .main__block{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    .main__block-logo{
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        margin-top: 97px;
-        justify-content: center;
-    }
-    
-    .main__block-logo img{
-        margin-top: 50px;
-        height: 200px;
+@media (max-width: 1024px) {
+    .right__text label{
+        font-size: 15px;
     }
 }
 
-@media (max-width: 700px){
-    .main__block-logo{
-        margin-top: 70px;
-    }
-    
-    .main__block-logo img{
-        margin-top: 0px;
-        height: 165px;
+@media (max-width: 768px) {
+    .right__text label{
+        font-size: 12px;
     }
 }
 
-@media (max-width: 425px){
-    .main__block-logo{
-        margin-top: 70px;
+/* Текст кінець */
+
+/* Фотки букетів */
+
+
+
+@media (min-width: 1025px) {
+
+    .bouquet__block{
+        min-height: 100%;
+        background-color: #FFFFFF;
+        padding-top: 30px;
+    }
+
+    .bouquet__conteiner{
+        height: 100%;
+    }
+
+    .block__first-bouqet:hover, .block__two-bouqet:hover, .block__three-bouqet:hover{
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+         transform: scale(1.1);
+    
+         transition: all 0.4s linear;
+    }
+
+    .block__first-bouqet-two:hover, .block__two-bouqet-two:hover, .block__three-bouqet-two:hover{
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+         transform: scale(1.1);
+    
+         transition: all 0.4s linear;
+    }
+
+    .bouquet__conteiner img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
     }
     
-    .main__block-logo img{
-        margin-top: 0px;
-        height: 165px;
+    .up__block-bouquet{
+        display: flex;
+        height: 50%;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .down__block-bouquet{
+        display: flex;
+        height: 50%;
+        gap: 20px;
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bouquet__block{
+        min-height: 100%;
+        background-color: #FFFFFF;
+        padding-top: 30px;
+    }
+   
+    .bouquet__text__conteiner{
+        min-height: 250px;
+        align-items: center;
+        text-align: center;
+        display: flex;
+    }
+
+    .bouquet__conteiner{
+        display: flex;
+        height: 100%;
+        overflow-x: auto;
+        
+    }
+
+    .bouquet__conteiner::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .bouquet__conteiner img{
+        object-fit: cover;
+        margin-right: 25px;
+        width: 500px;
+        height: 500px;
+    }
+
+    .up__block-bouquet{
+        display: flex;
+        height: 50%;
+        margin-bottom: 20px;
+
+        
+    }
+    
+    .down__block-bouquet{
+        display: flex;
+        height: 50%;
+        margin-left: -10px;
+        margin-bottom: 100px;
+    }
+
+
+}
+
+@media (max-width: 800px) {
+    .bouquet__conteiner img{
+        object-fit: cover;
+        margin-right: 25px;
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bouquet__conteiner img{
+        object-fit: cover;
+        margin-right: 25px;
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .bouquet__block{
+        padding-top: 10px;
     }
 }
 
 @media (max-width: 375px){
-    
-    .main__block-logo img{
-        margin-top: 0px;
-        height: 150px;
+    .bouquet__conteiner img{
+        width: 300px;
+        height: 300px;
     }
 }
 
 @media (max-width: 320px){
-    
-    .main__block-logo img{
-        margin-top: 0px;
-        height: 130px;
+    .bouquet__conteinear img{
+        width: 250px;
+        height: 250px;
     }
 }
 
+.block__first-bouqet, .block__two-bouqet, .block__three-bouqet{
+    width: 33%;
+    cursor: pointer;
 
-/* Logo End*/
-
-/* Text */
-
-@media (min-width: 1025px){
-
-    .main__block-text{
-    
-        width: 100%;
-        height: 100%;
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-        align-items: center;
-    }
-
-    .main__block-text h1{
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 44px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-
-        letter-spacing: 0.01em;
-
-        color: #000000;
-    }
-
-    .main__block-text label{
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 550;
-        font-size: 18px;
-        line-height: 30px;
-        text-align: center;
-        letter-spacing: 0.01em;
-
-        color: #000000;
-    }
+    transition: all 0.4s linear;
 }
 
-@media (max-width: 1024px){
-    .main__block-text{
-        width: 100%;
-        height: 100%;
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-        align-items: center;
-    }
+.block__first-bouqet-two, .block__two-bouqet-two, .block__three-bouqet-two{
+    width: 33%;
+    cursor: pointer;
 
-    .main__block-text h1{
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 44px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-
-        letter-spacing: 0.01em;
-
-        color: #000000;
-    }
-
-    .main__block-text label{
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 550;
-        font-size: 18px;
-        line-height: 30px;
-        text-align: center;
-        letter-spacing: 0.01em;
-
-        color: #000000;
-    }
+    transition: all 0.4s linear;
 }
 
-@media (max-width: 700px){
-
-    .main__block-text h1{
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 44px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-
-    .main__block-text label{
-        font-weight: 550;
-        font-size: 16px;
-        line-height: 25px;
-    }
-}
-
-@media (max-width: 425px){
-    .main__block-text label{
-        font-weight: 550;
-        font-size: 16px;
-        line-height: 21px;
-    }
-}
-
-@media (max-width: 375px){
-    .main__block-text label{
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 21px;
-    }
-}
-
-@media (max-width: 320px){
-    .main__block-text label{
-        font-weight: 600;
-        font-size: 10px;
-        line-height: 0px;
-    }
-}
-
-/* Text End */
-
-/* QR */
-
-@media (min-width: 1025px){
-    .main__block-qr{
-        width: 100%;
-        height: 100%;
-    }
-    
-    .main__block-qr img{
-        height: 300px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        padding-top: 50px;
-    }
-}
-
-@media (max-width: 1024px){
-    .main__block-qr{
-        width: 100%;
-        height: 100%;
-    }
-    
-    .main__block-qr img{
-        height: 300px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        padding-top: 50px;
-    }
-}
-
-@media (max-width: 700px){
-    .main__block-qr{
-        width: 100%;
-        height: 100%;
-    }
-    
-    .main__block-qr img{
-        height: 200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        padding-top: 50px;
-    }
-}
-
+/* Фотки букетів кінець */
 
 /* Огранічующий контейнер */
 
