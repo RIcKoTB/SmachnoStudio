@@ -859,17 +859,18 @@ transition: background-color 0.3s ease 0s;
         height: 100%;
     }
     
-    .up__block-bouquet{
+    .up__block-bouquet, .down__block-bouquet{
         display: flex;
         height: 50%;
         gap: 20px;
         margin-bottom: 20px;
     }
     
-    .down__block-bouquet{
+    .three__block-bouquet{
         display: flex;
         height: 50%;
         gap: 20px;
+        margin-left: -10px;
         margin-bottom: 100px;
     }
 }
@@ -906,7 +907,7 @@ transition: background-color 0.3s ease 0s;
         height: 500px;
     }
 
-    .up__block-bouquet{
+    .up__block-bouquet, .down__block-bouquet{
         display: flex;
         height: 50%;
         margin-bottom: 20px;
@@ -914,7 +915,7 @@ transition: background-color 0.3s ease 0s;
         
     }
     
-    .down__block-bouquet{
+    .three__block-bouquet{
         display: flex;
         height: 50%;
         margin-left: -10px;
